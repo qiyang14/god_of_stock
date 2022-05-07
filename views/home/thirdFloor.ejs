@@ -1,0 +1,230 @@
+<%- include('../_partial/_header'); -%>
+<style>
+    h2 {
+        text-align: center;
+        color: rgb(8, 40, 87);
+        margin-top: 30px;
+        }
+   
+    .level3-image {
+        width: 940px;
+        height: 525px;
+        min-height: 100px;
+        position: relative;
+        margin-top: 20px;
+    }
+    .card{
+        position:absolute;
+        left:20px; 
+        top:20px; 
+        height:36px;
+        
+    }
+    .card-body{
+        flex: 1 1 auto;
+        padding: 5px 5px;
+    }
+    .btn{
+        position:absolute;
+        left:810px; 
+        top:500px; 
+        color: rgb(8, 40, 87);"
+    }
+    
+    .exampleModal {
+        position: absolute;
+        cursor: pointer;
+        top: 200px;
+        left: 110px;
+        width: 75px;
+        height: 210px;
+    }
+    .exampleModal2 {
+        position: absolute;
+        cursor: pointer;
+        top: 60px;
+        left: 160px;
+        width: 120px;
+        height: 120px;
+    }
+    .exampleModal3 {
+        position: absolute;
+        cursor: pointer;
+        top: 240px;
+        left: 275px;
+        width: 80px;
+        height: 80px;
+    }
+    .exampleModal4 {
+        position: absolute;
+        cursor: pointer;
+        top: 280px;
+        left: 400px;
+        width: 110px;
+        height: 90px;
+    }
+    .exampleModal5 {
+        position: absolute;
+        cursor: pointer;
+        top: 230px;
+        left: 640px;
+        width: 85px;
+        height: 170px;
+    }
+    .exampleModal6 {
+        position: absolute;
+        cursor: pointer;
+        top: 255px;
+        left: 820px;
+        width: 115px;
+        height: 80px;
+    }
+    .progress{
+        margin-top: 20px;
+        width:940px;
+        background-color: #d6d9dc;
+    }
+    
+    
+
+</style>
+
+<h2>Welcome to the Third Floor</h2>
+
+<div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+
+<div class="level3-image">
+    <img src="/images/level3.jpg" style="width: 100%; height: 100%" />
+    
+    <div class="card text-center">
+        <div class="card-body" id="clueMessage">
+          Founded clues: 0/6
+        </div>
+    </div>
+
+
+    <a class="btn btn-light btn-lg" href="/stockhall" role="button">Stock Hall</a>
+
+    <div class="exampleModal" onclick="openClueModal('1')"></div>
+
+    <div class="exampleModal2" onclick="openClueModal('2')"></div>
+
+    <div class="exampleModal3" onclick="openClueModal('3')"></div>
+
+    <div class="exampleModal4" onclick="openClueModal('4')"></div>
+
+    <div class="exampleModal5" onclick="openClueModal('5')"></div>
+
+    <div class="exampleModal6" onclick="openClueModal('6')"></div>
+    
+    
+    
+</div>
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Regulatory & legal interventions</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <video controls width = "765px" >
+                    <source src="/video/level3.mp4" type="video/mp4">   
+                </video>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"> </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="/images/Hint/Third/3_1.png"height=455px width=765px/>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"> </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="/images/Hint/Third/3_2.png"height=455px width=765px/>
+            </div>
+            
+        </div>
+    </div>
+</div>
+ 
+
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"> </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="/images/Hint/Third/3_3.png"height=455px width=765px/>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"> </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="/images/Hint/Third/3_4_1.png"height=455px width=765px/>
+                <img src="/images/Hint/Third/3_4_2.png"height=455px width=765px/>
+                <img src="/images/Hint/Third/3_4_3.png"height=455px width=765px/>
+                <img src="/images/Hint/Third/3_4_4.png"height=455px width=765px/>
+                <img src="/images/Hint/Third/3_4_5.png"height=455px width=765px/>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"> </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="/images/Hint/Third/3_5.png"height=455px width=765px/>
+            </div>
+            
+        </div>
+    </div>
+</div> 
+
+
+<%- include ('../_partial/_footer'); -%>

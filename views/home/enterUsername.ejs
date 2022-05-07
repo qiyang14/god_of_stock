@@ -1,0 +1,41 @@
+<%- include('../_partial/_header'); -%>
+
+<script>
+    localStorage.removeItem('floor');
+    localStorage.removeItem('stockInfo');
+
+    function onConfirmButtonClick() {
+        const input = document.getElementById('usernameInput');
+    
+        setUsername(input.value);
+
+        location.href = '/chooseIndustry';
+    }
+    
+    function setUsername(username) {
+        localStorage.setItem('username', username);
+    }
+</script>
+
+
+<div style = " display: flex; flex-direction: row;">
+    <img src="images/Matthew.png" style="margin: 100px 50px 100px 50px;">
+    <div style = " display: flex; flex-direction: column;align-items: center;">
+        <h2 style="margin:200px 0 9px 0;">Please Enter Your Name:</h2>
+
+        <p style="margin: 0 0 9px 0; color:black; ">This name will be the same as the name presented on the certificate </p>
+
+
+        <input id="usernameInput" class="form-control" style="width: 439px;margin: 0 0 0 0;">
+
+        <div 
+            class="btn btn-light btn-lg" 
+            role="button" 
+            style="margin: 40px 0 0 0; color: rgb(8, 40, 87);"
+            onclick="onConfirmButtonClick()"
+        >Confirm</a>
+    </div>
+</div>
+
+
+<%- include ('../_partial/_footer'); -%>

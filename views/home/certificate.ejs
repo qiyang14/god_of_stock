@@ -1,0 +1,91 @@
+<%- include('../_partial/_header'); -%>
+
+<style>
+    .certificate{
+        position: relative;
+            width: 940px;
+            height: 525px;
+            margin-top: 0px;
+        text-align: center;
+    }
+
+    .word-title{
+        position: absolute;
+        top: 71px;
+        left: 240px;
+        color:black;
+    }
+
+    .word-1{
+        position: absolute;
+        top: 115px;
+        left: 285px;
+    }
+    .word-2{
+        position: absolute;
+        top: 168px;
+        left: 420px;
+    }
+    .word-3{
+        position: absolute;
+        top: 200px;
+        left: 280px;
+    }
+    .word-4{
+        position: absolute;
+        top: 255px;
+        left: 337px;
+    }
+    .word-5{
+        position: absolute;
+        top: 300px;
+        left: 450px;
+    }
+    .word-6{
+        position: absolute;
+        top: 350px;
+        left: 88px;
+    }
+    .word-7{
+        position: absolute;
+        top: 400px;
+        left: 385px;
+    }
+
+
+</style>
+
+
+<h2 style="margin: 30px 0 30px 0;">Certificate </h2>
+<div class="certificate">
+    <img src="/images/certificate.jpg" height=525pxpx width=940px/>
+    <h1 class="word-title">Certificate of Achievement</h1>
+    <h3 class="word-1">Who is the Next God of Stocks</h3>
+    <h5 class="word-2">ESG Challenge</h5>
+    <p id = "date" class="word-3">xx/xx/xxxx(date)</p>
+    <p class="word-4">
+        The certificate is proudly presented to 
+    </p>
+    <b  id="usernameContainer" class="word-5">#username#</b>
+    <p class="word-6">
+        for successfully completing the ESG investment game and developing a sustainable investor's mindset. 
+    </p>
+    <p class="word-7">
+        Keep up the good work!
+    </p>
+</div>
+
+<a class="btn btn-light btn-lg" href="/company" role="button" style="margin:15px 0 0 0 ;color: rgb(8, 40, 87);">Proceed</a>
+
+
+<script>
+    const pElement = document.getElementById('usernameContainer');
+    const username = localStorage.getItem('username');
+
+    pElement.innerText = username;
+
+    const pDate = document.getElementById('date');
+    pDate.innerText = Date();
+</script>
+
+<%- include ('../_partial/_footer'); -%>

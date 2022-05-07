@@ -1,0 +1,35 @@
+<%- include('../_partial/_header'); -%>
+<style>
+    h1 {text-align: center;}
+    .button-container {
+      height: 300px;
+      background-color: red;
+    }
+    .button-color {
+      color: rgb(8, 40, 87);
+    }
+    .right-button {
+      margin-left: 230px;
+    }
+    .ESG-btn{
+      margin: 0 90px 0 60px;
+    }
+</style>
+
+<h1 style="margin: 30px 0 30px 0;">About this Game</h1>
+
+
+<video controls height = "441px" width = "775px" style="margin: 0 0 0 0;;">
+
+  <source src="/video/introduction.mp4"
+          type="video/mp4" >
+</video>
+<div style="display: flex; flex-direction:row; margin: 30px 0 0 0;">
+  <a class="btn btn-light btn-lg ESG-btn"  href="/ESGintro" role="button" style="color: rgb(8, 40, 87);">Know More about ESG!</a>
+  <a class="btn btn-light btn-lg ESG-btn" href="/enterUsername" role="button" style="color: rgb(8, 40, 87);">Start the Game</a>
+</div>
+<p style="margin: 0 0 0 360px; color: darkgray;">Skip the introduction of ESG</p>   
+
+
+
+<%- include ('../_partial/_footer'); -%>

@@ -1,0 +1,502 @@
+<%- include('../_partial/_header'); -%>
+
+<div style="display: flex; flex-direction: row; position:relative;">
+    <a class="btn btn-light btn-lg" role="button" onclick="onGoBackFloor()" style="position: absolute; left:-350px; top: 15px; color: rgb(8, 40, 87);">Back to Floor</a>
+    <h1 style="margin-top: 20px;">Stock Hall</h1>
+   </div>
+   <div style="display: flex; flex-direction: row; margin: 20px;">
+       <p style="margin-right: 60px; margin-left: 50px; margin-bottom: 0;">Cash Balance:  $<span  id="cashBalance">100,000</span></p>
+       <p style="margin-right: 60px; margin-left: 50px; margin-bottom: 0;">Account Value:  $<span  id="accountValue">100,000</span></p>
+       <p style="margin-right: 60px; margin-left: 50px; margin-bottom: 0;">Date: <span id="date">17/01/2018</span></p>
+       
+   </div>
+
+<style>
+    .buy{
+        display: flex;
+        flex-direction: row;
+    }
+    .price{
+        margin-left: 200px;
+    }
+    .quantity{
+        margin-left: 170px;
+    }
+    .quantity2{
+        margin-top: 5px;
+    }
+    .amount{
+        margin-left:  178px;
+        margin-top: 10px;
+    }
+    .amount2{
+        margin-top: 8px;
+    }
+</style>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Stock</th>
+        <th>QTY</th>
+        <th>Last Purchased Price</th>
+        <th>Current Price</th>
+        <th>Return Rate</th>
+        <th>Market Value</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+</table>
+
+
+<!-- A -->
+<div class="modal fade" id="exampleModalA1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Buy Stocks</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="display:flex; flex-direction: column; ">
+                <div class="buy">
+                    <p>
+                        Price 
+                    </p>
+                    <p class="price" id="currentPriceA1">
+                        $1200
+                    </p>
+                </div>
+                <div class="buy">
+                    <p class="quantity2">
+                        Quantity
+                    </p>
+                    <input 
+                        type="number" 
+                        class="form-control form-control-sm quantity" 
+                        id="buyA" 
+                        placeholder="Quantity"
+                        style="width: 200px;"
+                    />
+                </div>
+
+                <div class="buy">
+                    <p class="amount2"> 
+                        Amount
+                    </p>
+                    <p id ="tempAmountA_b" class="amount">
+                        $0
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button id="buyButton" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModalA2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sell Stocks</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="display:flex; flex-direction: column; ">
+                <div class="buy">
+                    <p>
+                        Price 
+                    </p>
+                    <p class="price" id="currentPriceA2">
+                        $1200
+                    </p>
+                </div>
+                <div class="buy">
+                    <p class="quantity2">
+                        Quantity
+                    </p>
+                    <input
+                        type="number" 
+                        class="form-control form-control-sm quantity" 
+                        id="sellA" 
+                        placeholder="Quantity"
+                        style="width: 200px;"
+                    />
+                </div>
+
+                <div class="buy">
+                    <p class="amount2"> 
+                        Amount
+                    </p>
+                    <p id ="tempAmountA_s" class="amount">
+                        $0
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button id="sellButton" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sell</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p style="color:black; margin-left: 360px; margin-bottom: 30px;">Total Market Value:  <span id="totalMarketValue"></span></p>
+
+
+<div style="display: flex; flex-direction: row;">
+    <p style="color:black; margin-top: 10px ;"> View Companies' Current Year Stock Chart</p>
+ 
+    <select id="companySelector" class="form-select" aria-label="Default select example" style="margin-left: 70px ; width:161px" >
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+        <option value="d">D</option>
+        <option value="e">E</option>
+    </select>
+
+    <button onclick="onShowStockChartClick()" type="button" class="btn btn-dark btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: 70px;">
+        Show Stock Chart
+    </button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Stock Chart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="chartImage" src="" width=765px />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<a class="btn btn-light btn-lg" onclick="onConfirmInvestmentButtonClick()" role="button" style="margin-top: 50px; color: rgb(8, 40, 87); ">Confirm All Investment</a>
+<!-- href="/secondFloor"  -->
+<p style="color:black; margin-top: 5px;">This will automatically bring you to the next Floor, you cannot undo once you click it.</p>
+
+<script>
+if (!localStorage.getItem('floor')) {
+    localStorage.setItem('floor', 1);
+}
+(function (){
+    const dateList = [
+        '2018/01/17',
+        '2019/01/17',
+        '2020/01/17',
+        '2021/01/17',
+        '2022/01/17',
+    ];
+
+    const currentFloor = localStorage.getItem('floor');
+    
+    document.getElementById('date').innerText = dateList[currentFloor - 1];
+
+})();
+</script>
+
+<script>
+const priceMap = {
+    a: [
+        104.56,
+        96.74,
+        114.96,
+        144.64,
+        145.06,
+    ],
+    b: [
+        16.86,
+        12.385,
+        10.99,
+        9.92,
+        10.25,
+    ],
+    c: [
+        55.73,
+        51.6,
+        56.8,
+        59.84,
+        54.29,
+    ],
+    d: [
+        109.37,
+        108.14,
+        150.85,
+        148.46,
+        199.54,
+    ],
+    e: [
+        70.3,
+        32.9,
+        45.11,
+        37.88,
+        42.45,
+    ],
+};
+
+if (!localStorage.getItem('stockInfo')) {
+    localStorage.setItem('stockInfo', JSON.stringify({
+        a: {
+            qty: 0,
+            lastPrice: null,
+        },
+        b: {
+            qty: 0,
+            lastPrice: null,
+        },
+        c: {
+            qty: 0,
+            lastPrice: null,
+        },
+        d: {
+            qty: 0,
+            lastPrice: null,
+        },
+        e: {
+            qty: 0,
+            lastPrice: null,
+        },
+        balance: 100000,
+    }));
+}
+
+const currentFloor = localStorage.getItem('floor');
+const currentPriceMap = {
+    a: priceMap.a[currentFloor - 1],
+    b: priceMap.b[currentFloor - 1],
+    c: priceMap.c[currentFloor - 1],
+    d: priceMap.d[currentFloor - 1],
+    e: priceMap.e[currentFloor - 1],
+};
+
+function toPercent(point){
+       var str=Number(point*100).toFixed(1);
+       str+="%";
+       return str;
+}
+
+function onGoBackFloor() {   
+    // alert(1);
+    var floor = localStorage.getItem('floor');
+    if (floor == 1){
+        location.href = '/firstFloor';
+    } else if (floor == 2){
+        location.href = '/secondFloor';
+    } else if (floor == 3){
+        location.href = '/thirdFloor';
+    } else if (floor == 4){
+        location.href = '/fourthFloor';
+    } else if (floor == 5){
+        location.href = '/fifthFloor';
+    }
+}
+
+function renderPrice() {
+    function renderItem (stockName, itemInfo) {
+        const returnRate = (currentPriceMap[stockName] - itemInfo.lastPrice) / itemInfo.lastPrice;
+
+        return `<tr>
+            <td>${stockName.toUpperCase()}</td>
+            <td id="qtyA">${itemInfo.qty}</td>
+            <td id="lastPriceA">${itemInfo.lastPrice ?? 'N/A'}</td>
+            <td id="currentPriceA">${currentPriceMap[stockName]}</td>
+            <td id="returnRateA">${itemInfo.lastPrice ? toPercent(returnRate) : 'N/A'}</td>
+            <td id="marketValueA">${(itemInfo.qty * currentPriceMap[stockName]).toFixed(2)}</td>
+            <td>
+                <button type="button" class="btn btn-primary btn-sm btn-dark" onClick="openBuyModel('${stockName}')">
+                    Buy
+                </button>
+                <button type="button" class="btn btn-primary btn-sm btn-dark" onClick="openSellModel('${stockName}')">
+                    Sell
+                </button>
+            </td>
+        </tr>
+        `
+    }
+
+    const stockInfo = JSON.parse(localStorage.getItem('stockInfo'));
+
+
+    const templateString = ['a', 'b', 'c', 'd', 'e']
+        .map(stockName => renderItem(stockName, stockInfo[stockName]))
+        .join('\n')
+    ;
+
+    document.getElementById('tbody').innerHTML = templateString;
+
+    document.getElementById('cashBalance').innerHTML = (stockInfo.balance).toFixed(2);
+
+    let stockValue = countStockValue();
+
+    document.getElementById('accountValue').innerHTML = (stockInfo.balance + stockValue).toFixed(2);
+
+    document.getElementById('totalMarketValue').innerHTML = stockValue;
+}
+
+function countStockValue() {
+    const stockInfo = JSON.parse(localStorage.getItem('stockInfo'));
+
+    let stockValue = 0;
+
+    for(const stockName of ['a', 'b', 'c', 'd', 'e']) {
+        stockValue = stockValue + stockInfo[stockName].qty * currentPriceMap[stockName];
+    }
+
+    return stockValue;
+}
+
+renderPrice();
+
+
+function openBuyModel(stockName) {
+    var myModal = new bootstrap.Modal(document.getElementById('exampleModalA1'), {});
+    myModal.show()
+
+    document.getElementById('currentPriceA1').innerText = '$' + currentPriceMap[stockName];
+
+    document.getElementById('buyA').oninput = function() {
+        const amount = (currentPriceMap[stockName] * document.getElementById('buyA').value).toFixed(2);
+
+        document.getElementById('tempAmountA_b').innerText = '$' + amount;
+    }
+
+    document.getElementById('buyButton').onclick = function() {
+        onConfirmBuyButton(stockName, document.getElementById('buyA').value);
+        renderPrice();
+        document.getElementById('buyA').value = 0;
+        document.getElementById('buyA').oninput();
+    }
+    
+}
+function onConfirmBuyButton(stockName, submittedQty) {
+    const stockInfo = JSON.parse(localStorage.getItem('stockInfo'));
+
+    stockInfo[stockName].qty = stockInfo[stockName].qty + Number(submittedQty);
+
+    localStorage.setItem('stockInfo', JSON.stringify(stockInfo));
+}
+
+function openSellModel(stockName) {
+    var myModal = new bootstrap.Modal(document.getElementById('exampleModalA2'), {});
+    myModal.show()
+
+    document.getElementById('currentPriceA2').innerText = '$' + currentPriceMap[stockName];
+
+    document.getElementById('sellA').oninput = function() {
+        const amount = (currentPriceMap[stockName] * document.getElementById('sellA').value).toFixed(2);
+        document.getElementById('tempAmountA_s').innerText = '$' + amount;
+    }
+
+    document.getElementById('sellButton').onclick = function() {
+        onConfirmBuyButton(stockName, -document.getElementById('sellA').value);
+        renderPrice();
+        document.getElementById('sellA').value = 0;
+        document.getElementById('sellA').oninput();
+    }
+    
+}
+function onConfirmBuyButton(stockName, submittedQty) {
+    const stockInfo = JSON.parse(localStorage.getItem('stockInfo'));
+
+    stockInfo[stockName].qty = stockInfo[stockName].qty + Number(submittedQty);
+    stockInfo[stockName].lastPrice = currentPriceMap[stockName];
+
+    stockInfo.balance = stockInfo.balance - (Number(submittedQty) * currentPriceMap[stockName]);
+
+    if (stockInfo[stockName].qty < 0) {
+        alert('You do not have enough stocks :(');
+        return;
+    }
+    if (stockInfo.balance < 0) {
+        alert('The cash balance is not enough :(');
+        return;
+    }
+
+    localStorage.setItem('stockInfo', JSON.stringify(stockInfo));
+}
+</script>
+
+<script>
+    function onConfirmInvestmentButtonClick() {
+        localStorage.setItem('floor', Number(localStorage.getItem('floor')) + 1);
+
+        if (localStorage.getItem('floor') === '6') {
+            const stockInfo = JSON.parse(localStorage.getItem('stockInfo'));
+
+            const total = countStockValue() + stockInfo.balance;
+
+            console.log(total, countStockValue(), stockInfo.balance);
+            if (total / 100000 > 1.35) {
+                location.href = '/success'
+            } else {
+                location.href = '/fail'
+            }
+
+            return;
+        } else {
+            location.href = {
+                2: '/secondFloor',
+                3: '/thirdFloor',
+                4: '/fourthFloor',
+                5: '/fifthFloor',
+            }[localStorage.getItem('floor')];
+        }
+    }
+
+
+    const chartMap = {
+        a: [
+            'WMT_A/WMT_Level1.jpg',
+            'WMT_A/WMT_Level2.jpg',
+            'WMT_A/WMT_Level3.jpg',
+            'WMT_A/WMT_Level4.jpg',
+            'WMT_A/WMT_Level5.png',
+        ],
+        b: [
+            'JAPAY_B/JAPAY_Level1.jpg',
+            'JAPAY_B/JAPAY_Level2.jpg',
+            'JAPAY_B/JAPAY_Level3.jpg',
+            'JAPAY_B/JAPAY_Level4.jpg',
+            'JAPAY_B/JAPAY_Level5.jpg',
+        ],
+        c: [
+            'UL_C/UL_Level1.jpg',
+            'UL_C/UL_Level2.jpg',
+            'UL_C/UL_Level3.jpg',
+            'UL_C/UL_Level4.jpg',
+            'UL_C/UL_Level5.jpg',
+        ],
+        d: [
+            'HSY_D/HSY_Level1.jpg',
+            'HSY_D/HSY_Level2.jpg',
+            'HSY_D/HSY_Level3.jpg',
+            'HSY_D/HSY_Level4.jpg',
+            'HSY_D/HSY_Level5.jpg',
+        ],
+        e: [
+            'BTI_E/BTI_Level1.jpg',
+            'BTI_E/BTI_Level2.jpg',
+            'BTI_E/BTI_Level3.jpg',
+            'BTI_E/BTI_Level4.jpg',
+            'BTI_E/BTI_Level5.jpg',
+        ],
+};
+
+    function onShowStockChartClick() {
+        const stockName = document.getElementById('companySelector').value;
+        const imagePath = chartMap[stockName][Number(localStorage.getItem('floor')) - 1];
+
+        document.getElementById('chartImage').src = '/Stock_Hall/' + imagePath;
+    }   
+
+</script>
+<%- include ('../_partial/_footer'); -%>

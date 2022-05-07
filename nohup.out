@@ -1,0 +1,393 @@
+Wed, 06 Apr 2022 14:44:48 GMT express:application set "x-powered-by" to true
+Wed, 06 Apr 2022 14:44:48 GMT express:application set "etag" to 'weak'
+Wed, 06 Apr 2022 14:44:48 GMT express:application set "etag fn" to [Function: generateETag]
+Wed, 06 Apr 2022 14:44:48 GMT express:application set "env" to 'development'
+Wed, 06 Apr 2022 14:44:48 GMT express:application set "query parser" to 'extended'
+Wed, 06 Apr 2022 14:44:48 GMT express:application set "query parser fn" to [Function: parseExtendedQueryString]
+Wed, 06 Apr 2022 14:44:48 GMT express:application set "subdomain offset" to 2
+Wed, 06 Apr 2022 14:44:48 GMT express:application set "trust proxy" to false
+Wed, 06 Apr 2022 14:44:48 GMT express:application set "trust proxy fn" to [Function: trustNone]
+Wed, 06 Apr 2022 14:44:48 GMT express:application booting in development mode
+Wed, 06 Apr 2022 14:44:48 GMT express:application set "view" to [Function: View]
+Wed, 06 Apr 2022 14:44:48 GMT express:application set "views" to '/home/coder/project/views'
+Wed, 06 Apr 2022 14:44:48 GMT express:application set "jsonp callback name" to 'callback'
+Wed, 06 Apr 2022 14:44:48 GMT express:application set "port" to 4200
+Wed, 06 Apr 2022 14:44:48 GMT express:application set "views" to '/home/coder/project/views'
+Wed, 06 Apr 2022 14:44:48 GMT express:application set "view engine" to 'ejs'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/home'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/home'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/home'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/set-name'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/set-name'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/set-name'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/about'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/about'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/about'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/login'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/login'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/login'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/firstFloor'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/firstFloor'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/firstFloor'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/try'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/try'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/try'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/ESGintro'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/ESGintro'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/ESGintro'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/chooseIndustry'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/chooseIndustry'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/chooseIndustry'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/enterUsername'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/enterUsername'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/enterUsername'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/stockhall'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/stockhall'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/stockhall'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/success'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/success'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/success'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/fail'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/fail'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/fail'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/certificate'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/certificate'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/certificate'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/company'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/company'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/company'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/secondFloor'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/secondFloor'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/secondFloor'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/thirdFloor'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/thirdFloor'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/thirdFloor'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/fourthFloor'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/fourthFloor'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/fourthFloor'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/fifthFloor'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/fifthFloor'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/fifthFloor'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router use '/' router
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router use '/' query
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router use '/' expressInit
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router use '/' router
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:route get '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Wed, 06 Apr 2022 14:44:48 GMT express:router use '/users' router
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/users'
+Wed, 06 Apr 2022 14:44:48 GMT express:router use '/api' router
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/api'
+Wed, 06 Apr 2022 14:44:48 GMT express:router use '/' serveStatic
+Wed, 06 Apr 2022 14:44:48 GMT express:router:layer new '/'
+Server started on port 4200
+Wed, 06 Apr 2022 14:45:05 GMT express:router dispatching GET /
+Wed, 06 Apr 2022 14:45:05 GMT express:router query  : /
+Wed, 06 Apr 2022 14:45:05 GMT express:router expressInit  : /
+Wed, 06 Apr 2022 14:45:05 GMT express:router router  : /
+Wed, 06 Apr 2022 14:45:05 GMT express:router dispatching GET /
+Wed, 06 Apr 2022 14:45:05 GMT express:router router  : /
+Wed, 06 Apr 2022 14:45:05 GMT express:router dispatching GET /
+Wed, 06 Apr 2022 14:45:05 GMT express:view require "ejs"
+Wed, 06 Apr 2022 14:45:05 GMT express:view lookup "home/.ejs"
+Wed, 06 Apr 2022 14:45:05 GMT express:view stat "/home/coder/project/views/home/.ejs"
+Wed, 06 Apr 2022 14:45:05 GMT express:view stat "/home/coder/project/views/home/index.ejs"
+Wed, 06 Apr 2022 14:45:05 GMT express:view render "/home/coder/project/views/home/index.ejs"
+Wed, 06 Apr 2022 14:45:05 GMT express:router dispatching GET /style.css
+Wed, 06 Apr 2022 14:45:05 GMT express:router query  : /style.css
+Wed, 06 Apr 2022 14:45:05 GMT express:router expressInit  : /style.css
+Wed, 06 Apr 2022 14:45:05 GMT express:router router  : /style.css
+Wed, 06 Apr 2022 14:45:05 GMT express:router dispatching GET /style.css
+Wed, 06 Apr 2022 14:45:05 GMT express:router router  : /style.css
+Wed, 06 Apr 2022 14:45:05 GMT express:router dispatching GET /style.css
+Wed, 06 Apr 2022 14:45:05 GMT express:router serveStatic  : /style.css
+Wed, 06 Apr 2022 14:45:05 GMT send stat "/home/coder/project/public/style.css"
+Wed, 06 Apr 2022 14:45:05 GMT express:router dispatching GET /styles.css
+Wed, 06 Apr 2022 14:45:05 GMT express:router query  : /styles.css
+Wed, 06 Apr 2022 14:45:05 GMT express:router expressInit  : /styles.css
+Wed, 06 Apr 2022 14:45:05 GMT express:router router  : /styles.css
+Wed, 06 Apr 2022 14:45:05 GMT express:router dispatching GET /styles.css
+Wed, 06 Apr 2022 14:45:05 GMT express:router router  : /styles.css
+Wed, 06 Apr 2022 14:45:05 GMT express:router dispatching GET /styles.css
+Wed, 06 Apr 2022 14:45:05 GMT express:router dispatching GET /images/icon.png
+Wed, 06 Apr 2022 14:45:05 GMT express:router query  : /images/icon.png
+Wed, 06 Apr 2022 14:45:05 GMT express:router expressInit  : /images/icon.png
+Wed, 06 Apr 2022 14:45:05 GMT express:router router  : /images/icon.png
+Wed, 06 Apr 2022 14:45:05 GMT express:router dispatching GET /images/icon.png
+Wed, 06 Apr 2022 14:45:05 GMT express:router router  : /images/icon.png
+Wed, 06 Apr 2022 14:45:05 GMT express:router dispatching GET /images/icon.png
+Wed, 06 Apr 2022 14:45:05 GMT finalhandler default 404
+Wed, 06 Apr 2022 14:45:05 GMT express:router serveStatic  : /styles.css
+Wed, 06 Apr 2022 14:45:05 GMT send stat "/home/coder/project/public/styles.css"
+Wed, 06 Apr 2022 14:45:05 GMT express:router serveStatic  : /images/icon.png
+Wed, 06 Apr 2022 14:45:05 GMT send stat "/home/coder/project/public/images/icon.png"
+Wed, 06 Apr 2022 14:45:05 GMT send pipe "/home/coder/project/public/styles.css"
+Wed, 06 Apr 2022 14:45:05 GMT send accept ranges
+Wed, 06 Apr 2022 14:45:05 GMT send cache-control public, max-age=0
+Wed, 06 Apr 2022 14:45:05 GMT send modified Fri, 01 Apr 2022 14:19:56 GMT
+Wed, 06 Apr 2022 14:45:05 GMT send etag W/"149-17fe57f3f6e"
+Wed, 06 Apr 2022 14:45:05 GMT send content-type text/css
+Wed, 06 Apr 2022 14:45:05 GMT send not modified
+Wed, 06 Apr 2022 14:45:05 GMT send pipe "/home/coder/project/public/images/icon.png"
+Wed, 06 Apr 2022 14:45:05 GMT send accept ranges
+Wed, 06 Apr 2022 14:45:05 GMT send cache-control public, max-age=0
+Wed, 06 Apr 2022 14:45:05 GMT send modified Tue, 15 Mar 2022 13:48:38 GMT
+Wed, 06 Apr 2022 14:45:05 GMT send etag W/"6fc4-17f8dd67dd2"
+Wed, 06 Apr 2022 14:45:05 GMT send content-type image/png
+Wed, 06 Apr 2022 14:45:05 GMT send not modified
+Wed, 06 Apr 2022 14:45:21 GMT express:router dispatching GET /
+Wed, 06 Apr 2022 14:45:21 GMT express:router query  : /
+Wed, 06 Apr 2022 14:45:21 GMT express:router expressInit  : /
+Wed, 06 Apr 2022 14:45:21 GMT express:router router  : /
+Wed, 06 Apr 2022 14:45:21 GMT express:router dispatching GET /
+Wed, 06 Apr 2022 14:45:21 GMT express:router router  : /
+Wed, 06 Apr 2022 14:45:21 GMT express:router dispatching GET /
+Wed, 06 Apr 2022 14:45:21 GMT express:view lookup "home/.ejs"
+Wed, 06 Apr 2022 14:45:21 GMT express:view stat "/home/coder/project/views/home/.ejs"
+Wed, 06 Apr 2022 14:45:21 GMT express:view stat "/home/coder/project/views/home/index.ejs"
+Wed, 06 Apr 2022 14:45:21 GMT express:view render "/home/coder/project/views/home/index.ejs"
+Wed, 06 Apr 2022 14:45:21 GMT express:router dispatching GET /style.css
+Wed, 06 Apr 2022 14:45:21 GMT express:router query  : /style.css
+Wed, 06 Apr 2022 14:45:21 GMT express:router expressInit  : /style.css
+Wed, 06 Apr 2022 14:45:21 GMT express:router router  : /style.css
+Wed, 06 Apr 2022 14:45:21 GMT express:router dispatching GET /style.css
+Wed, 06 Apr 2022 14:45:21 GMT express:router router  : /style.css
+Wed, 06 Apr 2022 14:45:21 GMT express:router dispatching GET /style.css
+Wed, 06 Apr 2022 14:45:21 GMT express:router serveStatic  : /style.css
+Wed, 06 Apr 2022 14:45:21 GMT send stat "/home/coder/project/public/style.css"
+Wed, 06 Apr 2022 14:45:21 GMT finalhandler default 404
+Wed, 06 Apr 2022 14:45:21 GMT express:router dispatching GET /images/icon.png
+Wed, 06 Apr 2022 14:45:21 GMT express:router query  : /images/icon.png
+Wed, 06 Apr 2022 14:45:21 GMT express:router expressInit  : /images/icon.png
+Wed, 06 Apr 2022 14:45:21 GMT express:router router  : /images/icon.png
+Wed, 06 Apr 2022 14:45:21 GMT express:router dispatching GET /images/icon.png
+Wed, 06 Apr 2022 14:45:21 GMT express:router router  : /images/icon.png
+Wed, 06 Apr 2022 14:45:21 GMT express:router dispatching GET /images/icon.png
+Wed, 06 Apr 2022 14:45:21 GMT express:router serveStatic  : /images/icon.png
+Wed, 06 Apr 2022 14:45:21 GMT send stat "/home/coder/project/public/images/icon.png"
+Wed, 06 Apr 2022 14:45:21 GMT express:router dispatching GET /styles.css
+Wed, 06 Apr 2022 14:45:21 GMT express:router query  : /styles.css
+Wed, 06 Apr 2022 14:45:21 GMT express:router expressInit  : /styles.css
+Wed, 06 Apr 2022 14:45:21 GMT express:router router  : /styles.css
+Wed, 06 Apr 2022 14:45:21 GMT express:router dispatching GET /styles.css
+Wed, 06 Apr 2022 14:45:21 GMT express:router router  : /styles.css
+Wed, 06 Apr 2022 14:45:21 GMT express:router dispatching GET /styles.css
+Wed, 06 Apr 2022 14:45:21 GMT send pipe "/home/coder/project/public/images/icon.png"
+Wed, 06 Apr 2022 14:45:21 GMT send accept ranges
+Wed, 06 Apr 2022 14:45:21 GMT send cache-control public, max-age=0
+Wed, 06 Apr 2022 14:45:21 GMT send modified Tue, 15 Mar 2022 13:48:38 GMT
+Wed, 06 Apr 2022 14:45:21 GMT send etag W/"6fc4-17f8dd67dd2"
+Wed, 06 Apr 2022 14:45:21 GMT send content-type image/png
+Wed, 06 Apr 2022 14:45:21 GMT send not modified
+Wed, 06 Apr 2022 14:45:21 GMT express:router serveStatic  : /styles.css
+Wed, 06 Apr 2022 14:45:21 GMT send stat "/home/coder/project/public/styles.css"
+Wed, 06 Apr 2022 14:45:21 GMT send pipe "/home/coder/project/public/styles.css"
+Wed, 06 Apr 2022 14:45:21 GMT send accept ranges
+Wed, 06 Apr 2022 14:45:21 GMT send cache-control public, max-age=0
+Wed, 06 Apr 2022 14:45:21 GMT send modified Fri, 01 Apr 2022 14:19:56 GMT
+Wed, 06 Apr 2022 14:45:21 GMT send etag W/"149-17fe57f3f6e"
+Wed, 06 Apr 2022 14:45:21 GMT send content-type text/css
+Wed, 06 Apr 2022 14:45:21 GMT send not modified
+Wed, 06 Apr 2022 14:51:22 GMT express:router dispatching GET /
+Wed, 06 Apr 2022 14:51:22 GMT express:router query  : /
+Wed, 06 Apr 2022 14:51:22 GMT express:router expressInit  : /
+Wed, 06 Apr 2022 14:51:22 GMT express:router router  : /
+Wed, 06 Apr 2022 14:51:22 GMT express:router dispatching GET /
+Wed, 06 Apr 2022 14:51:22 GMT express:router router  : /
+Wed, 06 Apr 2022 14:51:22 GMT express:router dispatching GET /
+Wed, 06 Apr 2022 14:51:22 GMT express:view lookup "home/.ejs"
+Wed, 06 Apr 2022 14:51:22 GMT express:view stat "/home/coder/project/views/home/.ejs"
+Wed, 06 Apr 2022 14:51:22 GMT express:view stat "/home/coder/project/views/home/index.ejs"
+Wed, 06 Apr 2022 14:51:22 GMT express:view render "/home/coder/project/views/home/index.ejs"
+Wed, 06 Apr 2022 14:51:32 GMT express:router dispatching GET /
+Wed, 06 Apr 2022 14:51:32 GMT express:router query  : /
+Wed, 06 Apr 2022 14:51:32 GMT express:router expressInit  : /
+Wed, 06 Apr 2022 14:51:32 GMT express:router router  : /
+Wed, 06 Apr 2022 14:51:32 GMT express:router dispatching GET /
+Wed, 06 Apr 2022 14:51:32 GMT express:router router  : /
+Wed, 06 Apr 2022 14:51:32 GMT express:router dispatching GET /
+Wed, 06 Apr 2022 14:51:32 GMT express:view lookup "home/.ejs"
+Wed, 06 Apr 2022 14:51:32 GMT express:view stat "/home/coder/project/views/home/.ejs"
+Wed, 06 Apr 2022 14:51:32 GMT express:view stat "/home/coder/project/views/home/index.ejs"
+Wed, 06 Apr 2022 14:51:32 GMT express:view render "/home/coder/project/views/home/index.ejs"
+Wed, 06 Apr 2022 14:56:27 GMT express:router dispatching GET /
+Wed, 06 Apr 2022 14:56:27 GMT express:router query  : /
+Wed, 06 Apr 2022 14:56:27 GMT express:router expressInit  : /
+Wed, 06 Apr 2022 14:56:27 GMT express:router router  : /
+Wed, 06 Apr 2022 14:56:27 GMT express:router dispatching GET /
+Wed, 06 Apr 2022 14:56:27 GMT express:router router  : /
+Wed, 06 Apr 2022 14:56:27 GMT express:router dispatching GET /
+Wed, 06 Apr 2022 14:56:27 GMT express:view lookup "home/.ejs"
+Wed, 06 Apr 2022 14:56:27 GMT express:view stat "/home/coder/project/views/home/.ejs"
+Wed, 06 Apr 2022 14:56:27 GMT express:view stat "/home/coder/project/views/home/index.ejs"
+Wed, 06 Apr 2022 14:56:27 GMT express:view render "/home/coder/project/views/home/index.ejs"
+Wed, 06 Apr 2022 14:56:27 GMT express:router dispatching GET /style.css
+Wed, 06 Apr 2022 14:56:27 GMT express:router query  : /style.css
+Wed, 06 Apr 2022 14:56:27 GMT express:router expressInit  : /style.css
+Wed, 06 Apr 2022 14:56:27 GMT express:router router  : /style.css
+Wed, 06 Apr 2022 14:56:27 GMT express:router dispatching GET /style.css
+Wed, 06 Apr 2022 14:56:27 GMT express:router router  : /style.css
+Wed, 06 Apr 2022 14:56:27 GMT express:router dispatching GET /style.css
+Wed, 06 Apr 2022 14:56:27 GMT express:router serveStatic  : /style.css
+Wed, 06 Apr 2022 14:56:27 GMT send stat "/home/coder/project/public/style.css"
+Wed, 06 Apr 2022 14:56:27 GMT finalhandler default 404
+Wed, 06 Apr 2022 14:56:27 GMT express:router dispatching GET /styles.css
+Wed, 06 Apr 2022 14:56:27 GMT express:router query  : /styles.css
+Wed, 06 Apr 2022 14:56:27 GMT express:router expressInit  : /styles.css
+Wed, 06 Apr 2022 14:56:27 GMT express:router router  : /styles.css
+Wed, 06 Apr 2022 14:56:27 GMT express:router dispatching GET /styles.css
+Wed, 06 Apr 2022 14:56:27 GMT express:router router  : /styles.css
+Wed, 06 Apr 2022 14:56:27 GMT express:router dispatching GET /styles.css
+Wed, 06 Apr 2022 14:56:27 GMT express:router serveStatic  : /styles.css
+Wed, 06 Apr 2022 14:56:27 GMT send stat "/home/coder/project/public/styles.css"
+Wed, 06 Apr 2022 14:56:27 GMT send pipe "/home/coder/project/public/styles.css"
+Wed, 06 Apr 2022 14:56:27 GMT send accept ranges
+Wed, 06 Apr 2022 14:56:27 GMT send cache-control public, max-age=0
+Wed, 06 Apr 2022 14:56:27 GMT send modified Fri, 01 Apr 2022 14:19:56 GMT
+Wed, 06 Apr 2022 14:56:27 GMT send etag W/"149-17fe57f3f6e"
+Wed, 06 Apr 2022 14:56:27 GMT send content-type text/css
+Wed, 06 Apr 2022 14:56:27 GMT send not modified
+Wed, 06 Apr 2022 14:56:27 GMT express:router dispatching GET /images/icon.png
+Wed, 06 Apr 2022 14:56:27 GMT express:router query  : /images/icon.png
+Wed, 06 Apr 2022 14:56:27 GMT express:router expressInit  : /images/icon.png
+Wed, 06 Apr 2022 14:56:27 GMT express:router router  : /images/icon.png
+Wed, 06 Apr 2022 14:56:27 GMT express:router dispatching GET /images/icon.png
+Wed, 06 Apr 2022 14:56:27 GMT express:router router  : /images/icon.png
+Wed, 06 Apr 2022 14:56:27 GMT express:router dispatching GET /images/icon.png
+Wed, 06 Apr 2022 14:56:27 GMT express:router serveStatic  : /images/icon.png
+Wed, 06 Apr 2022 14:56:27 GMT send stat "/home/coder/project/public/images/icon.png"
+Wed, 06 Apr 2022 14:56:27 GMT send pipe "/home/coder/project/public/images/icon.png"
+Wed, 06 Apr 2022 14:56:27 GMT send accept ranges
+Wed, 06 Apr 2022 14:56:27 GMT send cache-control public, max-age=0
+Wed, 06 Apr 2022 14:56:27 GMT send modified Tue, 15 Mar 2022 13:48:38 GMT
+Wed, 06 Apr 2022 14:56:27 GMT send etag W/"6fc4-17f8dd67dd2"
+Wed, 06 Apr 2022 14:56:27 GMT send content-type image/png
+Wed, 06 Apr 2022 14:56:27 GMT send not modified
+Wed, 06 Apr 2022 14:56:32 GMT express:router dispatching GET /about
+Wed, 06 Apr 2022 14:56:32 GMT express:router query  : /about
+Wed, 06 Apr 2022 14:56:32 GMT express:router expressInit  : /about
+Wed, 06 Apr 2022 14:56:32 GMT express:router router  : /about
+Wed, 06 Apr 2022 14:56:32 GMT express:router dispatching GET /about
+Wed, 06 Apr 2022 14:56:32 GMT express:router router  : /about
+Wed, 06 Apr 2022 14:56:32 GMT express:router dispatching GET /about
+Wed, 06 Apr 2022 14:56:32 GMT express:view lookup "home/about.ejs"
+Wed, 06 Apr 2022 14:56:32 GMT express:view stat "/home/coder/project/views/home/about.ejs"
+Wed, 06 Apr 2022 14:56:32 GMT express:view render "/home/coder/project/views/home/about.ejs"
+Wed, 06 Apr 2022 14:56:32 GMT express:router dispatching GET /style.css
+Wed, 06 Apr 2022 14:56:32 GMT express:router query  : /style.css
+Wed, 06 Apr 2022 14:56:32 GMT express:router expressInit  : /style.css
+Wed, 06 Apr 2022 14:56:32 GMT express:router router  : /style.css
+Wed, 06 Apr 2022 14:56:32 GMT express:router dispatching GET /style.css
+Wed, 06 Apr 2022 14:56:32 GMT express:router router  : /style.css
+Wed, 06 Apr 2022 14:56:32 GMT express:router dispatching GET /style.css
+Wed, 06 Apr 2022 14:56:32 GMT express:router serveStatic  : /style.css
+Wed, 06 Apr 2022 14:56:32 GMT send stat "/home/coder/project/public/style.css"
+Wed, 06 Apr 2022 14:56:32 GMT finalhandler default 404
+Wed, 06 Apr 2022 14:56:32 GMT express:router dispatching GET /styles.css
+Wed, 06 Apr 2022 14:56:32 GMT express:router query  : /styles.css
+Wed, 06 Apr 2022 14:56:32 GMT express:router expressInit  : /styles.css
+Wed, 06 Apr 2022 14:56:32 GMT express:router router  : /styles.css
+Wed, 06 Apr 2022 14:56:32 GMT express:router dispatching GET /styles.css
+Wed, 06 Apr 2022 14:56:32 GMT express:router router  : /styles.css
+Wed, 06 Apr 2022 14:56:32 GMT express:router dispatching GET /styles.css
+Wed, 06 Apr 2022 14:56:32 GMT express:router serveStatic  : /styles.css
+Wed, 06 Apr 2022 14:56:32 GMT send stat "/home/coder/project/public/styles.css"
+Wed, 06 Apr 2022 14:56:32 GMT send pipe "/home/coder/project/public/styles.css"
+Wed, 06 Apr 2022 14:56:32 GMT send accept ranges
+Wed, 06 Apr 2022 14:56:32 GMT send cache-control public, max-age=0
+Wed, 06 Apr 2022 14:56:32 GMT send modified Fri, 01 Apr 2022 14:19:56 GMT
+Wed, 06 Apr 2022 14:56:32 GMT send etag W/"149-17fe57f3f6e"
+Wed, 06 Apr 2022 14:56:32 GMT send content-type text/css
+Wed, 06 Apr 2022 14:56:32 GMT send not modified
+Wed, 06 Apr 2022 14:56:32 GMT express:router dispatching GET /images/icon.png
+Wed, 06 Apr 2022 14:56:32 GMT express:router query  : /images/icon.png
+Wed, 06 Apr 2022 14:56:32 GMT express:router expressInit  : /images/icon.png
+Wed, 06 Apr 2022 14:56:32 GMT express:router router  : /images/icon.png
+Wed, 06 Apr 2022 14:56:32 GMT express:router dispatching GET /images/icon.png
+Wed, 06 Apr 2022 14:56:32 GMT express:router router  : /images/icon.png
+Wed, 06 Apr 2022 14:56:32 GMT express:router dispatching GET /images/icon.png
+Wed, 06 Apr 2022 14:56:32 GMT express:router serveStatic  : /images/icon.png
+Wed, 06 Apr 2022 14:56:32 GMT send stat "/home/coder/project/public/images/icon.png"
+Wed, 06 Apr 2022 14:56:32 GMT send pipe "/home/coder/project/public/images/icon.png"
+Wed, 06 Apr 2022 14:56:32 GMT send accept ranges
+Wed, 06 Apr 2022 14:56:32 GMT send cache-control public, max-age=0
+Wed, 06 Apr 2022 14:56:32 GMT send modified Tue, 15 Mar 2022 13:48:38 GMT
+Wed, 06 Apr 2022 14:56:32 GMT send etag W/"6fc4-17f8dd67dd2"
+Wed, 06 Apr 2022 14:56:32 GMT send content-type image/png
+Wed, 06 Apr 2022 14:56:32 GMT send not modified
+Wed, 06 Apr 2022 14:56:33 GMT express:router dispatching GET /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router query  : /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router expressInit  : /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router router  : /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router dispatching GET /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router router  : /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router dispatching GET /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router serveStatic  : /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT send stat "/home/coder/project/public/video/introduction.mp4"
+Wed, 06 Apr 2022 14:56:33 GMT send pipe "/home/coder/project/public/video/introduction.mp4"
+Wed, 06 Apr 2022 14:56:33 GMT send accept ranges
+Wed, 06 Apr 2022 14:56:33 GMT send cache-control public, max-age=0
+Wed, 06 Apr 2022 14:56:33 GMT send modified Tue, 05 Apr 2022 13:00:54 GMT
+Wed, 06 Apr 2022 14:56:33 GMT send etag W/"581b25-17ff9d05481"
+Wed, 06 Apr 2022 14:56:33 GMT send content-type video/mp4
+Wed, 06 Apr 2022 14:56:33 GMT send not modified
+Wed, 06 Apr 2022 14:56:33 GMT express:router dispatching GET /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router query  : /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router expressInit  : /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router router  : /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router dispatching GET /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router router  : /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router dispatching GET /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router serveStatic  : /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT send stat "/home/coder/project/public/video/introduction.mp4"
+Wed, 06 Apr 2022 14:56:33 GMT send pipe "/home/coder/project/public/video/introduction.mp4"
+Wed, 06 Apr 2022 14:56:33 GMT send accept ranges
+Wed, 06 Apr 2022 14:56:33 GMT send cache-control public, max-age=0
+Wed, 06 Apr 2022 14:56:33 GMT send modified Tue, 05 Apr 2022 13:00:54 GMT
+Wed, 06 Apr 2022 14:56:33 GMT send etag W/"581b25-17ff9d05481"
+Wed, 06 Apr 2022 14:56:33 GMT send content-type video/mp4
+Wed, 06 Apr 2022 14:56:33 GMT send range [{"start":300176,"end":3932159}]
+Wed, 06 Apr 2022 14:56:33 GMT express:router dispatching GET /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router query  : /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router expressInit  : /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router router  : /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router dispatching GET /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router router  : /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router dispatching GET /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT express:router serveStatic  : /video/introduction.mp4
+Wed, 06 Apr 2022 14:56:33 GMT send stat "/home/coder/project/public/video/introduction.mp4"
+Wed, 06 Apr 2022 14:56:33 GMT send pipe "/home/coder/project/public/video/introduction.mp4"
+Wed, 06 Apr 2022 14:56:33 GMT send accept ranges
+Wed, 06 Apr 2022 14:56:33 GMT send cache-control public, max-age=0
+Wed, 06 Apr 2022 14:56:33 GMT send modified Tue, 05 Apr 2022 13:00:54 GMT
+Wed, 06 Apr 2022 14:56:33 GMT send etag W/"581b25-17ff9d05481"
+Wed, 06 Apr 2022 14:56:33 GMT send content-type video/mp4
+Wed, 06 Apr 2022 14:56:33 GMT send not modified
