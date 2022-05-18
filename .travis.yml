@@ -13,6 +13,6 @@ before_install:
 script:
   - npm run build
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker build -t pea3nut/pxer-homepage:latest .
+  - docker build -t qiyang14/god_of_stock:latest .
   - docker push qiyang14/god_of_stock:latest
 
